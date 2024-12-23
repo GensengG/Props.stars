@@ -1,4 +1,3 @@
-// import { App } from '../App.jsx';
 import { Star } from './Star.jsx';
 
 export const Stars = (isStars) => {
