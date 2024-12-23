@@ -1,4 +1,3 @@
-// import { App } from '../App.jsx';
 import { Stars } from './Stars.jsx';
 
 export const Star = (count) => {
