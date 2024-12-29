@@ -1,13 +1,12 @@
-import { Star } from './Star.jsx';
+import { Star } from './Star.tsx';
 
-export const Stars = (isStars) => {
-
-let {count} = isStars; 
-let starsArr = [];
-function starsFunk(count){
+export const Stars = () => {
+let count:number = 4;
+let starsArr: any = [];
+function starsFunk(count: number){
     starsArr = [];
     for(let i = 0; i < count; i += 1){
-        starsArr.push(<Star />);
+        starsArr.push(<Star key={i}/>);
     }
 };
 
@@ -18,12 +17,7 @@ if(count < 6 && count > 0){
             {starsArr}
         </ul>
     );
-} else if (count === NuN && count === undefined) {
-    return (
-        <ul className="card-body-stars u-clearfix">
-        </ul>
-    )
-} else {
+}else {
     return (
         <ul className="card-body-stars u-clearfix">
         </ul>
@@ -31,3 +25,5 @@ if(count < 6 && count > 0){
 }
 
 }
+
+export default Stars
