@@ -1,8 +1,9 @@
 import { Star } from './Star.tsx';
+import { starItem } from "../src/index.ts"
 
 export const Stars = () => {
-let count:number = 4;
-let starsArr: any = [];
+let count:number = 3;
+let starsArr:starItem[] = [];
 function starsFunk(count: number){
     starsArr = [];
     for(let i = 0; i < count; i += 1){
